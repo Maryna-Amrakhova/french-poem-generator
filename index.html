@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>AI French poem generator</title>
+    <title>AI poem generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI French poem generator</h1>
+        <h1>AI poem generator</h1>
       </header>
 
       <main>
-        <form>
+        <form id="generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the French poem"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-type" />
         </form>
-        <div class="poem">
-          The poem will go header
-          <br />
-          The poem will go header
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by
@@ -43,7 +40,7 @@
           Github</a
         >
         and is hosted on
-        <a href="https://french-poem-generator-24.netlify.app/"> Netlify</a>
+        <a href="https://french-poem-generator-24.netlify.app/"> Netlify</a>.
       </footer>
     </div>
     <script src="src/index.js"></script>
