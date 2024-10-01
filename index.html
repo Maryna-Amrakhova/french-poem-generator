@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the French poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="text-type"
-            id="user-context"
-          />
-          <input type="submit" class="submit-type" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the French poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="text-type"
+              id="user-context"
+            />
+            <input type="submit" class="submit-type" />
+          </form>
+          <small class="hint"> i.e: Flowers, Sky, Paris</small>
+        </div>
+        <div class="poem hidden blink" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by
